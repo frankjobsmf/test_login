@@ -66,5 +66,7 @@ class ListAparcamientoAPI(generics.ListAPIView):
     ]
 
     def get_queryset(self):
+        import time
+        time.sleep(3)
         return Aparcamiento.objects.all()
 
